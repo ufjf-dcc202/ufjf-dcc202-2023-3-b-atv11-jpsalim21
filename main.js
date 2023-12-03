@@ -22,7 +22,7 @@ function atualizaLista(){
     const lista = getLista();
     itens.innerHTML = '';
     for(let i = 0; i < lista.length; i++){
-        adicionaItem(lista[i]);
+        adicionaItemNaLista(lista[i]);
     }
 }
 
@@ -33,7 +33,7 @@ function adicionaEntrada(){
     atualizaLista();
 }
 
-function adicionaItem(item){
+function adicionaItemNaLista(item){
     const li = document.createElement('li');
     li.textContent = item;
     itens.appendChild(li);
