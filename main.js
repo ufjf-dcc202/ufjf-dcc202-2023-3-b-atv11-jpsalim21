@@ -10,6 +10,14 @@ const botaoAdicionar = document.querySelector('#adicionar');
 const botaoLimpar = document.querySelector('#limpar');
 const itens = document.querySelector('#itens');
 
+function atualizaLista(){
+    const lista = getLista();
+    itens.innerHTML = '';
+    for(let i = 0; i < lista.length; i++){
+        adicionaItem(lista[i]);
+    }
+}
+
 function adicionaItem(item){
     const li = document.createElement('li');
     li.textContent = item;
