@@ -27,7 +27,7 @@ function atualizaLista(){
 }
 
 function adicionaEntrada(){
-    const item = entrada.value;
+    const item = entrada.textContent;
     adicionaItem(item);
     entrada.textContent = '';
     atualizaLista();
