@@ -10,6 +10,9 @@ const botaoAdicionar = document.querySelector('#adicionar');
 const botaoLimpar = document.querySelector('#limpar');
 const itens = document.querySelector('#itens');
 
+botaoAdicionar.addEventListener('click', adicionaEntrada);
+botaoLimpar.addEventListener('click', limparLista);
+
 function limparLista(){
     limpaLista();
     atualizaLista();
