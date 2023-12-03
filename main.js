@@ -18,6 +18,13 @@ function atualizaLista(){
     }
 }
 
+function adicionaEntrada(){
+    const item = entrada.value;
+    adicionaItem(item);
+    entrada.textContent = '';
+    atualizaLista();
+}
+
 function adicionaItem(item){
     const li = document.createElement('li');
     li.textContent = item;
